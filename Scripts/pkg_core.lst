@@ -17,10 +17,12 @@ brightnessctl                                          # screen brightness contr
 udiskie                                                # manage removable media
 
 # --------------------------------------------------- // Display Manager
-sddm                                                   # display manager for KDE plasma
-qt5-quickcontrols                                      # for sddm theme ui elements
-qt5-quickcontrols2                                     # for sddm theme ui elements
-qt5-graphicaleffects                                   # for sddm theme effects
+#sddm                                                  # display manager for KDE plasma
+qt5-quickcontrols|sddm                                 # for sddm theme ui elements
+qt5-quickcontrols2|sddm                                # for sddm theme ui elements
+qt5-graphicaleffects|sddm                              # for sddm theme effects
+gdm                                                    # display manager for GNOME
+gdm-settings|gdm                                       # gdm configuration sucks
 
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
@@ -46,9 +48,9 @@ pacman-contrib                                         # for system update check
 parallel                                               # for parallel processing
 jq                                                     # for json processing
 imagemagick                                            # for image processing
-qt5-imageformats                                       # for dolphin image thumbnails
-ffmpegthumbs                                           # for dolphin video thumbnails
-kde-cli-tools                                          # for dolphin file type defaults
+qt5-imageformats|dolphin                               # for dolphin image thumbnails
+ffmpegthumbs                                           # for file explorer video thumbnails
+kde-cli-tools|dolphin                                  # for dolphin file type defaults
 libnotify                                              # for notifications
 noto-fonts-emoji                                       # emoji font
 
@@ -64,8 +66,10 @@ qt6-wayland                                            # wayland support in qt6
 # --------------------------------------------------- // Applications
 firefox                                                # browser
 kitty                                                  # terminal
-dolphin                                                # kde file manager
-ark                                                    # kde file archiver
+#dolphin                                                # kde file manager
+#ark                                                    # kde file archiver
+nautilus                                               # GNOME file manager
+file-roller                                            # GNOME file archiver
 unzip                                                  # extracting zip files
 vim                                                    # terminal text editor
 code                                                   # ide text editor
