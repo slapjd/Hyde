@@ -1,3 +1,18 @@
 #!/bin/sh
 # shellcheck disable=SC1090
 . "$HOME/.config/uwsm/hyde/"*
+
+export QT_QPA_PLATFORMTHEME=gtk3 # Have Qt just render with GTK
+
+# NVIDIA VRR
+export __GL_VRR_ALLOWED=1
+export __GL_GSYNC_ALLOWED=1
+
+# IME
+export GTK_IM_MODULE=fcitx
+# export QT_IM_MODULE=fcitx
+# export XMODIFIERS="@im=fcitx"
+
+export MOZ_DISABLE_RDD_SANDBOX=1 # HW Video Acceleration in Firefox
+
+export MANGOHUD=1 # MangoHud everything by default
