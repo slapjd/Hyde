@@ -2,8 +2,6 @@
     border: none;
     border-radius: 0px;
     font-family: "${font_name}","JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: ${s_fontpx}px;
     min-height: 10px;
 }
 
@@ -11,6 +9,8 @@
 
 window#waybar {
     background: @bar-bg;
+    font-weight: bold;
+    font-size: ${s_fontpx}px;
 }
 
 tooltip {
@@ -18,6 +18,8 @@ tooltip {
     color: @main-fg;
     border-radius: ${t_radius}px;
     border-width: 0px;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 #workspaces button {
@@ -33,6 +35,7 @@ tooltip {
     margin-${x4}: 0px;
     color: @main-fg;
     animation: ws_normal 20s ease-in-out 1;
+    font-weight: bold;
 }
 
 #workspaces button.active {
